@@ -1,4 +1,5 @@
 # Frontend Mentor - Landing page with detailed integrations section
+https://chamumutezva.github.io/fylo-landing-page-558498-master/
 
 ![Header/intro section for the Landing page with detailed integrations section](./design/desktop-preview.jpg)
 
