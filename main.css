@@ -23,7 +23,7 @@ header {
     background-image: url(images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 70%;
+    background-size: 50%;
     grid-template-columns: 1fr;
    
 }
@@ -74,10 +74,19 @@ nav img {
 }
 
 img.mainImg {
-    width: 90%;
-   /*   grid-column: 2;
-  margin: 25% auto 5%;*/
+    width: 70%;
+     margin: auto;
+    padding-bottom: 15%;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top : 20%;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
 @media only screen and (max-width: 650px) {
     #page_wrapper {
         grid-template-columns: 1fr;
@@ -167,11 +176,11 @@ img.mainImg {
     }
 
     main {
-        display: grid;
+       /* display: grid;*/
         grid-template-columns: 1fr;
         row-gap: 5%;
-        text-align: center;
-        /* font-weight: 400; */
+       /*  text-align: center;
+        font-weight: 400; */
     }
 
     section.hero {
