@@ -25,7 +25,7 @@ header {
     background-position-x: right;
     background-size: 50%;
     grid-template-columns: 1fr;
-   
+
 }
 
 .headerContent {
@@ -36,7 +36,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-     margin-top: 5%;
+    margin-top: 5%;
 }
 
 nav img {
@@ -54,7 +54,8 @@ nav img {
 
 .signIn {
     justify-self: end;
-      padding: 5%;
+    padding: 5%;
+    line-height: 2;
 }
 
 .signUp {
@@ -63,28 +64,116 @@ nav img {
     border-radius: 2px;
     text-align: center;
     padding: 5%;
-    width: 100px;
+    width: 16vw;
+    line-height: 2;
 }
 
 .hero_header {
-    text-align: center;
+    display: grid;
+    grid-row-gap: 5%;
+    text-align: start;
     /* grid-column: 1; */
     padding: 10% 5%
-    /*grid-column: 1;*/
+        /*grid-column: 1;*/
+}
+
+.hero_header p,
+h1 {
+    margin: 5% 10%;
+    text-align: start;
+}
+
+.getStarted {
+    margin-left: 10%;
 }
 
 img.mainImg {
     width: 70%;
-     margin: auto;
+    margin: auto;
     padding-bottom: 15%;
+}
+
+input.btnGetStarted {
+    width: 50%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(163, 95%, 43%);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top : 20%;
+    margin-top: 20%;
     text-align: center;
     /* font-weight: 400; */
+}
+
+section.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 10%; 
+    margin-bottom: 10%;
+    */
+}
+
+.stayProductive h2 {
+    margin-bottom: 5%;
+}
+
+.stayProductive p {
+    padding-bottom: 5%;
+}
+
+.sign a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: large;
+}
+
+.allDevices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 10%;*/
+}
+
+section.apps {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    /* row-gap: 10%; */
+    margin-top: 20%;
+}
+
+.connectedApps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    margin-right: 5%;
+}
+
+.allApps {
+    border: 1px solid hsl(0, 0%, 50%);
+    width: 100%;
+    margin: 5% auto;
+    height: 30vw;
+}
+
+section.apps img {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.appContent {
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 50%);
+}
+
+.gsuite, .salesForce {
+    margin-top: -10%;
 }
 
 @media only screen and (max-width: 650px) {
@@ -104,10 +193,7 @@ main {
         grid-template-columns: 1fr;
     }
 
-    nav {
-       
-
-    }
+    nav {}
 
     .headerContent {
         grid-template-columns: 1fr;
@@ -120,19 +206,15 @@ main {
     }
 
     .sign {
-       /* display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
         width: 90%;
         font-size: small;*/
     }
 
-    .sign a {
-        text-decoration: none;
-        color: white;
-    }
 
     .signUp {
-       /* background-color: hsl(163, 95%, 43%);
+        /* background-color: hsl(163, 95%, 43%);
         border-radius: 2px;
         text-align: center;
         padding: 5%;
@@ -150,8 +232,10 @@ main {
     }
 
     .hero_header {
+        /*grid-row-gap: 5%;*/
         grid-row: 2;
     }
+
     h1,
     p {
         text-align: center;
@@ -176,22 +260,23 @@ main {
     }
 
     main {
-       /* display: grid;*/
+        /* display: grid;*/
         grid-template-columns: 1fr;
         row-gap: 5%;
-       /*  text-align: center;
+        margin-top: 0;
+        /*  text-align: center;
         font-weight: 400; */
     }
 
     section.hero {
-        display: grid;
+        /*  display: grid;*/
         grid-template-columns: 1fr;
         /*row-gap: 10%;*/
         margin-bottom: 10%;
     }
 
     section.apps {
-        display: grid;
+        /*display: grid;*/
         grid-template-columns: 1fr;
         /* row-gap: 10%;*/
         margin-top: 20%;
@@ -204,7 +289,6 @@ main {
     }
 
     .allApps {
-        border: 1px solid hsl(0, 0%, 50%);
         width: 60%;
         margin: 5% auto;
         height: 70vw;
@@ -220,7 +304,7 @@ main {
     }
 
     .allDevices {
-        display: grid;
+        /* display: grid;*/
         grid-template-columns: 1fr;
         row-gap: 10%;
     }
@@ -239,8 +323,12 @@ main {
     }
 
     .appContent {
-        width: 100%;
-        border-top: 1px solid hsl(0, 0%, 50%);
+        /*width: 100%;
+        border-top: 1px solid hsl(0, 0%, 50%);*/
+    }
+
+    .connectedApps {
+        grid-template-columns: 1fr;
     }
 
     footer {
