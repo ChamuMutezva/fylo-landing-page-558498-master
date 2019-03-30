@@ -95,7 +95,7 @@ img.mainImg {
 
 input.btnGetStarted {
     width: 50%;
-    height: 40px;
+    height: 50px;
     color: white;
     border-radius: 5px;
     background-color: hsl(163, 95%, 43%);
@@ -172,17 +172,136 @@ section.apps img {
     border-top: 1px solid hsl(0, 0%, 50%);
 }
 
-.gsuite, .salesForce {
+.gsuite,
+.salesForce {
     margin-top: -10%;
 }
 
+section.callToSign {
+    margin: 5% 25%;
+    display: grid;
+    grid-row-gap: 20%;
+}
+
+.heroApps {
+    margin-top: 25vw;
+}
+
+section.apps h2 {
+    margin: 5% 10%;
+    font-size: large;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+footer img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 5%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+footer p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.btnText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inputText {
+    margin: 5% 10%;
+    width: 80%;
+    justify-self: end;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 4vw;
+}
+
+.inputBtnJoin {
+    width: 90%;
+    /* justify-self: end;*/
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+input.btnJoin {
+    width: 100%;
+    height: 4vw;
+}
+
+input.btnGetStarted,
+input.btnJoin {    
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(163, 95%, 43%);
+}
+
+.phone,
+.email {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 10%;
+}
+
+.products,
+.aboutUs,
+.support {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 11%;
+    row-gap: 20%;
+    margin-left: 5%;
+}
+.details a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.details h4 {
+    font-size: large;
+}
 @media only screen and (max-width: 650px) {
+
+    .details h4 {
+        font-size: small;
+    }
+
     #page_wrapper {
         grid-template-columns: 1fr;
         row-gap: 5%;
         /* overflow: hidden;*/
 
     }
+
 
     header {
         width: 100%;
@@ -191,6 +310,10 @@ section.apps img {
         background-position-x: right;
         background-size: 70%;
         grid-template-columns: 1fr;
+    }
+
+    .heroApps {
+        margin-top: 0;
     }
 
     nav {}
@@ -238,10 +361,12 @@ section.apps img {
 
     h1,
     p {
+        /*
         text-align: center;
         margin: 5%;
         font-family: "Raleway", sans-serif;
         font-family: 700;
+        */
     }
 
     .getStarted {
@@ -331,24 +456,29 @@ section.apps img {
         grid-template-columns: 1fr;
     }
 
+    section.callToSign {
+        margin: -5% 0 5%;
+    }
+
     footer {
-        display: grid;
-        grid-template-columns: 1fr;
         margin-top: 50vw;
+        /*
+        display: grid;              
         background-color: hsl(243, 87%, 12%);
+*/
+        grid-template-columns: 1fr;
         color: white;
         height: 100%;
         padding-bottom: 40%;
     }
 
     footer img {
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         margin-top: 20%;
         margin-left: 5%;
     }
 
     footer p {
-        text-align: left;
+        /*text-align: left;*/
     }
 
     input[type="text"] {
@@ -363,7 +493,7 @@ section.apps img {
     }
 
     .btnText {
-        display: grid;
+        /*display: grid;*/
         grid-template-columns: 1fr;
     }
 
@@ -392,7 +522,7 @@ section.apps img {
     }
 
     .details {
-        display: grid;
+      /*  display: grid;*/
         grid-template-columns: 1fr;
         row-gap: 10%;
     }
@@ -400,17 +530,18 @@ section.apps img {
     .details a {
         text-decoration: none;
         color: white;
-        font-size: small;
+        font-size: x-small;
     }
 
     .products,
     .aboutUs,
     .support {
+        /*
         display: grid;
         grid-template-columns: 1fr;
         margin-bottom: 11%;
         row-gap: 10%;
-        margin-left: 5%;
+        margin-left: 5%;*/
     }
 
 }
