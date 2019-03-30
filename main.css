@@ -250,7 +250,7 @@ input.btnJoin {
 }
 
 input.btnGetStarted,
-input.btnJoin {    
+input.btnJoin {
     color: white;
     border-radius: 5px;
     background-color: hsl(163, 95%, 43%);
@@ -280,6 +280,7 @@ input.btnJoin {
     row-gap: 20%;
     margin-left: 5%;
 }
+
 .details a {
     text-decoration: none;
     color: white;
@@ -289,6 +290,50 @@ input.btnJoin {
 .details h4 {
     font-size: large;
 }
+
+@media only screen and (min-width: 651px) and (max-width: 900px) {
+
+    header {
+        background-size: 70%;
+    }
+
+    .details {
+        justify-items: center;
+    }
+
+    .connectedApps {
+
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+        margin: 5%;
+    }
+
+    .allApps {
+        height: 50vw;
+        margin: 0;
+    }
+
+    section.apps {
+        margin-bottom: 20%;
+        grid-template-columns: 1fr;
+    }
+
+    .gsuite,
+    .salesForce {
+        margin-top: 0;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        margin-top: 15vw;
+        padding-bottom: 20%;
+    }
+
+    .heroApps {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 650px) {
 
     .details h4 {
@@ -522,7 +567,7 @@ input.btnJoin {
     }
 
     .details {
-      /*  display: grid;*/
+        /*  display: grid;*/
         grid-template-columns: 1fr;
         row-gap: 10%;
     }
