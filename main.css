@@ -342,7 +342,7 @@ input.btnJoin {
     font-size: large;
 }
 
-@media only screen and (max-width: 950px) and (min-width: 651px) {
+@media only screen and (max-width: 950px) and (min-width: 655px) {
 
     input.btnGetStarted,
     input.btnJoin {
@@ -395,7 +395,7 @@ input.btnJoin {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 655px) {
 
     .sign a {
         font-size: small;
