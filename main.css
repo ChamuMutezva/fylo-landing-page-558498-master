@@ -64,8 +64,9 @@ nav img {
     border-radius: 2px;
     text-align: center;
     padding: 5%;
-    width: 16vw;
+    width: 15vw;
     line-height: 2;
+    margin-left: 10%;
 }
 
 .hero_header {
@@ -162,6 +163,7 @@ section.hero {
 
 .stayProductive p {
     padding-bottom: 5%;
+    font-weight: 400;
 }
 
 .sign a {
@@ -233,7 +235,7 @@ section.callToSign {
 
 section.apps h2 {
     margin: 5% 10%;
-    font-size: large;
+    /*font-size: large;*/
 }
 
 footer {
@@ -257,7 +259,7 @@ p {
     text-align: center;
     margin: 5%;
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
+   /* font-weight: 700;*/
 }
 
 footer p {
@@ -447,6 +449,8 @@ input.btnJoin {
 
 
     .signUp {
+        width: 25vw;
+        height: 10vw;
         /* background-color: hsl(163, 95%, 43%);
         border-radius: 2px;
         text-align: center;
@@ -462,6 +466,7 @@ input.btnJoin {
         width: 80%;
         margin: 25% auto 5%;
         grid-row: 1;
+        padding-bottom: 0;
     }
 
     .hero_header {
@@ -469,18 +474,26 @@ input.btnJoin {
         grid-row: 2;
     }
 
+    .hero_header p {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
     h1,
     p {
+        font-weight: 400;
         /*
         text-align: center;
         margin: 5%;
-        font-family: "Raleway", sans-serif;
-        font-family: 700;
+        
         */
     }
 
     .getStarted {
-        width: 50%;
+        width: 75%;
         text-align: center;
         margin: auto;
     }
@@ -545,12 +558,17 @@ input.btnJoin {
         row-gap: 10%;
     }
 
+    .callToSign h2 {
+        font-size: medium;
+    }
+
     .allDevices img {
         width: 30%;
     }
 
     .allDevices h3 {
         margin: 5% 20%;
+        font-size: medium;
     }
 
     section.apps h2 {
